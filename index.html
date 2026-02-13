@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keerthana Banda | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Inter',sans-serif;
+}
+
+body{
+    background:linear-gradient(to bottom,#ffffff,#f8fafc);
+    color:#1e293b;
+}
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    width:100%;
+    padding:20px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#ffffff;
+    border-bottom:1px solid #e2e8f0;
+    z-index:1000;
+}
+
+nav h2{
+    font-family:'Playfair Display',serif;
+    font-weight:700;
+    color:#111827;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#475569;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#2563eb;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 20px;
+}
+
+.hero h1{
+    font-size:3.2rem;
+    font-family:'Playfair Display',serif;
+    font-weight:700;
+}
+
+.hero span{
+    background:linear-gradient(45deg,#2563eb,#1e40af);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero p{
+    margin-top:15px;
+    max-width:650px;
+    color:#475569;
+    font-size:1.05rem;
+}
+
+section{
+    padding:100px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.2rem;
+    margin-bottom:60px;
+    font-family:'Playfair Display',serif;
+    color:#111827;
+}
+
+/* EDUCATION */
+.edu-container{
+    display:grid;
+    gap:25px;
+}
+
+.edu-box{
+    background:white;
+    padding:30px;
+    border-radius:14px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+
+.edu-box:hover{
+    transform:translateY(-5px);
+}
+
+/* PROJECTS */
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.project-card{
+    background:white;
+    padding:30px;
+    border-radius:14px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 30px rgba(37,99,235,0.15);
+}
+
+.project-card h3{
+    margin-bottom:10px;
+    color:#2563eb;
+}
+
+/* SKILLS */
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.skill-box{
+    background:white;
+    padding:30px;
+    border-radius:14px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+
+.skill-box:hover{
+    transform:translateY(-5px);
+}
+
+/* CONTACT */
+.contact-box{
+    text-align:center;
+    line-height:2.2;
+    font-size:1.05rem;
+}
+
+.contact-box a{
+    text-decoration:none;
+    color:#2563eb;
+    font-weight:600;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    border-top:1px solid #e2e8f0;
+    color:#64748b;
+    margin-top:40px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    nav ul{
+        display:none;
+    }
+    .hero h1{
+        font-size:2.2rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>Keerthana Banda</h2>
+    <ul>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h1>Hello, I'm <span>Keerthana Banda</span></h1>
+    <p>B.Tech 2nd Year Information Technology student focused on building practical and impactful full stack applications that solve real-world problems.</p>
+</section>
+
+<!-- EDUCATION FIRST -->
+<section id="education">
+    <h2 class="section-title">Education</h2>
+
+    <div class="edu-container">
+        <div class="edu-box">
+            <h3>B.Tech – Information Technology</h3>
+            <p>Vasavi Engineering College</p>
+            <p>Currently 2nd Year</p>
+        </div>
+
+        <div class="edu-box">
+            <h3>Intermediate</h3>
+            <p>TSWRIES COE, Madikonda (Kazipet)</p>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects">
+
+        <div class="project-card">
+            <h3>Getaway Guide</h3>
+            <p>
+            A smart travel advisory system that recommends trip destinations 
+            based on budget, season, number of people, and duration of stay.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Focus Tracker</h3>
+            <p>
+            Productivity monitoring application that detects keyboard, mouse, 
+            and screen inactivity and provides alerts to enhance focus.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Crisis Navigator</h3>
+            <p>
+            Disaster assistance application that suggests shortest and safest 
+            evacuation routes and provides NGO and emergency helpline contacts.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-grid">
+
+        <div class="skill-box">
+            <h3>Programming</h3>
+            <p>C</p>
+            <p>Python</p>
+            <p>Java</p>
+        </div>
+
+        <div class="skill-box">
+            <h3>Technologies</h3>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>SQL</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact-box">
+        <p>Email: <a href="mailto:bkeerthana2211@gmail.com">bkeerthana2211@gmail.com</a></p>
+        <p>Phone: 6305711211</p>
+        <p>LinkedIn: 
+        <a href="https://www.linkedin.com/in/keerthana-banda-491250339" target="_blank">
+        View Profile
+        </a></p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Keerthana Banda | Portfolio
+</footer>
+
+</body>
+</html>
